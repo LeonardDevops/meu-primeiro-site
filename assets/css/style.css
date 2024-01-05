@@ -1,0 +1,279 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+/* meu menu navegador */
+
+.container{
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    background-color: #121212;
+    
+}
+
+.logo {
+    margin: 10px;
+}
+
+.nav {
+width: 100%;
+height: 70px;
+}
+
+.nav-list {
+ display: flex;
+ justify-content:flex-end;
+ margin: 10px;
+
+}
+
+.nav-list li > a {
+    padding: 15px;
+    list-style: none;
+    text-decoration: none;
+    border: 0;
+    color: rgba(255, 255, 255,0.7);
+}
+.nav-list li > a:hover {
+    color: rgba(255, 255, 255,1);
+    
+}
+.nav-list > li  {
+    padding: 15px;
+    list-style: none;
+    
+}
+
+
+/* Meu Main */
+
+
+
+.main {
+width: 100vw;
+height:100vh;
+background-image: url("../img/programador.png"); 
+background-position: center left;
+align-items: center; 
+display: flex;
+padding-left: 10%;
+}
+
+.main h1 {
+    color: #ffffff;
+    font-size: 54px;
+
+}
+
+.main p {
+    font-size: 24px;
+    font-style: italic;
+    color: #1e96fc;
+    margin-top:10px;
+    margin-bottom: 35px;
+}
+
+.main a button {
+
+    padding: 10px;
+    border: 1px solid #121212;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #ffffff;
+    border: 0;
+    border-radius: 4.5px;
+    transition: 2.5s;
+    cursor: auto;
+}
+
+.main a button:hover {
+    background-color: #1e96fc;
+    cursor: pointer;
+    transform:scale(1.1);
+
+}
+
+/* sessão 2 Sobre */
+
+.main-sobre{
+    width: 100vw;
+    height:100vh;
+    background-position: center left;
+    align-items: center; 
+    justify-content: space-around;
+    display: flex;
+}
+
+.item2{
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 35%;
+    height:400px;
+    background-image: url("../img/foto-pc.png");
+}
+
+.item1 {
+
+    display:block;
+    width:35%;
+    padding-top:20%;
+}
+
+.item1 h1 {
+    padding-bottom: 10px;
+}
+
+
+/* segunda sessão*/
+
+.projetos {
+    display: flex;
+    height:calc(100vh - 70px);
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+
+}
+
+
+
+.projetos img {
+    width:13%;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+
+.projetos-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin-left:60%;
+}
+
+
+.projetos a button {
+    padding: 10px;
+    border: #121212 solid 1px;
+    border-radius: 5px;
+    background-color: #121212;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+/* rodape*/
+
+
+.rodape {
+    background-color: #121212;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    height: 70px;
+}
+
+.rodape div {
+
+    display: flex;
+    flex-direction: column;
+    font-style: italic;
+    align-items: center;
+    justify-content: center;
+}
+
+.rodape p {
+    font-size: 10px;
+}
+
+
+/* responsividade */
+
+
+@media (max-width: 780px) {
+html {
+    overflow-x: hidden;
+}
+.nav {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    width: 100%;
+}
+
+.main-sobre {
+    display: flex;
+    width: 100%;
+    font-size: 15px;
+    flex-direction: column;
+    text-align: justify;
+}
+
+.main-sobre h1 {
+  font-size: 30px;
+
+}
+.main-sobre p {
+  font-size: px;
+
+}
+.projetos h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-left: 50% ;
+}
+.projetos p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-left: 50% ;
+}
+.projetos button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-left: 50% ;
+}
+
+.projetos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 32%;
+    width: 100%;
+}
+
+.projetos img {
+    width:32%;
+}
+
+
+}
+
+
+
